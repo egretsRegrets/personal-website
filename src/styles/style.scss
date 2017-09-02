@@ -65,18 +65,18 @@ body {
         width: 150px;
     }
     .container.container__nav.container__nav__arrows{
-        flex-basis: 4.2%;
+        flex-basis: 3.8%;
         display: flex;
         flex-direction: row;
-        margin-left: 5%;
-        background: #3D1F3E;
+        margin-left: 8%;
+        border: 1.5px solid #3D1F3E;
         width: 130px;
         .container__current-view{
             display: flex;
             flex-direction: column;
             justify-content: center;
             flex: 3;
-            color: #F1686E;
+            color: #3D1F3E;
             #currentView{
                 text-align: center;
                 border-right: 1px solid;
@@ -90,8 +90,12 @@ body {
             justify-content: center;
             .arrow{
                 margin: 0 auto;
-                color: #F1686E;
+                color: #3D1F3E;
                 cursor: pointer;
+                font-size: 14px;
+                &.arrow__left{
+                    padding-top: 3px;
+                }
             }
             &.arrow-box.arrow-box__right{
                 transform: rotate(180deg);
@@ -101,5 +105,39 @@ body {
 
     .container.container__social__row{
         width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 35px;
+        .container.container__flex__row{
+            width: 100%;
+            align-items: center;
+        }
+        .container.container__icon__row{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            padding: 0 .7%;
+            .container.container__social__icon{
+                flex: 1;
+            }
+            .icon__social{
+                text-align: center;
+                i{
+                    color: #3D1F3E;
+                    font-size: 22px;
+                }
+            }
+        }
+        .line-segment{
+            height: 2px;
+            &.line-segment__1{
+                background: #3D1F3E;
+                flex: 4;
+            }
+            &.line-segment__2{
+                background: #3D1F3E;
+                flex: 1.2;
+            }
+        }
     }
 }
