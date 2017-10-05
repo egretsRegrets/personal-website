@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
+
 body {
     margin: 0;
 }
@@ -14,17 +16,14 @@ body {
 
 /* layers: */
 .layer__outer{
-    background: #FEF6E7;
+    background: #3D1F3E;
     width: 100vw;
     height: 100vh;
 }
 .container.container__flex__outermost{
-    width: 94%;
-    margin-right: 6%;
+    width: 95%;
+    margin-right: 5%;
     flex-direction: column;
-    .header.header__global{
-        flex-basis: 6%;   
-    }
     .layer{
         display: flex;
     }
@@ -55,6 +54,24 @@ body {
     }
 }
 
+/* header */
+.header.header__global{
+    flex-basis: 6%;
+    display: flex;
+    .nav.nav__global{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .nav-item{
+            margin-left: 20px;
+            cursor: pointer;
+            color: #FEF6E7;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+}
+
 /* footer: */
 .footer.footer__global{
     flex-basis: 6%;
@@ -62,25 +79,27 @@ body {
     flex-direction: row;
     .container.container__view-toggle{
         justify-content: center;
-        width: 150px;
+        width: 165px;
+        padding-left: 15px;
     }
     .container.container__nav.container__nav__arrows{
         flex-basis: 3.8%;
         display: flex;
         flex-direction: row;
-        margin-left: 8%;
-        border: 1.5px solid #3D1F3E;
-        width: 130px;
+        border: 1.5px solid #FEF6E7;
+        width: 150px;
         .container__current-view{
             display: flex;
             flex-direction: column;
             justify-content: center;
             flex: 3;
-            color: #3D1F3E;
+            color: #FEF6E7;
             #currentView{
                 text-align: center;
                 border-right: 1px solid;
                 border-left: 1px solid;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
             }
         }
         .arrow-box{
@@ -90,7 +109,7 @@ body {
             justify-content: center;
             .arrow{
                 margin: 0 auto;
-                color: #3D1F3E;
+                color: #FEF6E7;
                 cursor: pointer;
                 font-size: 14px;
                 &.arrow__left{
@@ -123,7 +142,7 @@ body {
             .icon__social{
                 text-align: center;
                 i{
-                    color: #3D1F3E;
+                    color: #FEF6E7;
                     font-size: 22px;
                 }
             }
@@ -131,11 +150,11 @@ body {
         .line-segment{
             height: 2px;
             &.line-segment__1{
-                background: #3D1F3E;
+                background: #FEF6E7;
                 flex: 4;
             }
             &.line-segment__2{
-                background: #3D1F3E;
+                background: #FEF6E7;
                 flex: 1.2;
             }
         }
